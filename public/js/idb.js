@@ -35,7 +35,7 @@ request.onupgradeneeded = function(event) {
     const transaction = db.transaction(['new_entry'], 'readwrite');
   
     // access your pending object store
-    const pizzaObjectStore = transaction.objectStore('new_entry');
+    const budgetObjectStore = transaction.objectStore('new_entry');
   
     // get all records from store and set to a variable
     const getAll = budgetObjectStore.getAll();
@@ -58,7 +58,7 @@ request.onupgradeneeded = function(event) {
             }
   
             const transaction = db.transaction(['new_entry'], 'readwrite');
-            const pizzaObjectStore = transaction.objectStore('new_entry');
+            const budgetObjectStore = transaction.objectStore('new_entry');
             // clear all items in your store
             budgetObjectStore.clear();
           })
