@@ -5,7 +5,7 @@ const FILES_TO_CACHE = [
     "./index.html",
     "./css/styles.css",
     "./js/index.js",
-    "./js/ibd.js"
+    "./js/idb.js"
 ];
 
 self.addEventListener('fetch', function (e) {
